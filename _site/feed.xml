@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-04-16T02:02:49+08:00</updated><id>http://localhost:4000/</id><title type="html">DB Study</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2018/04/15/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2018-04-15T22:20:07+08:00</published><updated>2018-04-15T22:20:07+08:00</updated><id>http://localhost:4000/jekyll/update/2018/04/15/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2018/04/15/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">索引的使用</title><link href="http://localhost:4000/dbquincy/update/2018/04/15/index-use.html" rel="alternate" type="text/html" title="索引的使用" /><published>2018-04-15T22:20:07+08:00</published><updated>2018-04-15T22:20:07+08:00</updated><id>http://localhost:4000/dbquincy/update/2018/04/15/index-use</id><content type="html" xml:base="http://localhost:4000/dbquincy/update/2018/04/15/index-use.html">&lt;h1 id=&quot;索引的使用&quot;&gt;索引的使用&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;这是一篇讲如何使用索引的文章，根据可能涉及到的内容，文章可能分成多个文章来写。这是第一篇。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;关于优化，我们都知道所以是一个重要组成部分（其实索引只是重要的部分之一，因为还是涉及到数据库类型、硬件资源能力、硬件资源配置、操作系统调节、数据库参数调整、数据库架构选择、数据文件分布考虑等）（以及最核心的数据模型设计）。本文中，我们只讲索引的部分。&lt;/p&gt;
+
+&lt;p&gt;一、什么是索引&lt;/p&gt;
+
+&lt;p&gt;二、使用索引的几个重要的点&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;如何查看是有用到了索引&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;如何查看计划&lt;/li&gt;
+      &lt;li&gt;一些典型的操作符的认识&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;如何选择合适的索引&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;什么叫第一次定位&lt;/p&gt;
+
+        &lt;blockquote&gt;
+          &lt;p&gt;第一次定位到尽可能少的值&lt;/p&gt;
+        &lt;/blockquote&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;什么叫尽可能小的中间结果集&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;什么叫尽可能少的回表数&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;避免列上的计算&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;优化器判断的坚实基础-统计信息&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;四、一些经典的例子&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;一些简单的例子&lt;/li&gt;
+  &lt;li&gt;一些稍微复杂的例子&lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">索引的使用</summary></entry></feed>
